@@ -1,0 +1,19 @@
+[server]
+headless = true
+runOnSave = false
+port = 8501
+address = "0.0.0.0"
+enableCORS = false
+enableXsrfProtection = false
+maxUploadSize = 200
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+
+[logger]
+level = "info"
+
+[client]
+showErrorDetails = false
