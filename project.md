@@ -2,13 +2,13 @@ This project is a minimal Streamlit app that accepts a system prompt, context, a
 
 ## Implementation Checklist
 - [x] Define `PromptInput` (system_prompt, context, question, model) with Pydantic v2
-- [ ] Validate inputs and `OPENROUTER_API_KEY` on “Start streaming”
+- [x] Validate inputs and `OPENROUTER_API_KEY` on “Start streaming”
 - [ ] Use OpenAI-compatible client for OpenRouter:
-  - [ ] Configure base_url `https://openrouter.ai/api/v1`
-  - [ ] Supply API key and optional headers (`HTTP-Referer`, `X-Title`)
+  - [x] Configure base_url `https://openrouter.ai/api/v1`
+  - [x] Supply API key and optional headers (`HTTP-Referer`, `X-Title`)
 - [ ] Build messages:
-  - [ ] system: system_prompt
-  - [ ] user: `context + question` (context optional)
+  - [x] system: system_prompt
+  - [x] user: `context + question` (context optional)
 - [ ] Stream response:
   - [ ] `client.chat.completions.create(..., stream=True)`
   - [ ] Incrementally render tokens via `st.empty()` buffer
